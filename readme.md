@@ -19,11 +19,10 @@ The source code for initialization of peripherals used in the microcontroller is
 - MPLAB® XC8 2.10 or newer compiler [(microchip.com/mplab/compilers)](http://www.microchip.com/mplab/compilers)
 - MPLAB® Code Configurator (MCC) 3.95.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
 - PIC16 Library v1.77.0
-- PIC16F18446 Curiosity Nano [(DM164144)](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM164144)
 - [PIC16F18446 datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/40001985B.pdf) for more information or specifications.
 
 ## Hardware components
-- PIC16F18446 Curiosity Nano
+- PIC16F18446 Curiosity Nano [(DM164144)](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM164144)
 - Switec Stepper motor
 - Potentiometer
 - LED
@@ -69,7 +68,7 @@ NCO_out is routed to a pin (PA2), in order to be available for all the periphera
 ![NCO Pin](Images/NCO_pin.PNG)
 
 #### Timer2 Settings
-Timer2 is used to divide the frequency of the NCO output, in order to generate a signal that will represent the input for the CLC peripheral. It operates in Roll over pulse mode and has NCO1OUT as clock source.
+Timer2 is used to divide the frequency of the NCO output, in order to generate a signal that will represent the input for the CLC1 peripheral. It operates in Roll over pulse mode and has NCO1OUT as clock source.
 
 ![TMR2 Settings](Images/TMR2.PNG)
 
@@ -136,6 +135,11 @@ The metronome produces an audible and visual signal every time an oscillating pe
 ![BuzzLED Pin](Images/pin.PNG)
 
 ## Demo
+
+<img src="Images/Demo.gif" alt="Demo"/>
+
+Note:
+- Due to the physical limitations of the Switec Stepper used, the number of beats per minute of the metronome is between 40 and 250.
 
 ## Conclusion
 
