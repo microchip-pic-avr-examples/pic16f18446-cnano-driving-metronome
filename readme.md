@@ -1,7 +1,7 @@
 <div id="readme" class="Box-body readme blob js-code-block-container">
 <article class="markdown-body entry-content p-3 p-md-6" itemprop="text"><p><a href="https://www.microchip.com" rel="nofollow"><img src="Images/MicrochipLogo.png" alt="MCHP" style="max-width:100%;"></a></p>
 
-# Driving a metronome using a PIC Microcontroller
+# Driving a Metronome Using a PIC Microcontroller
 
 ## Introduction
 
@@ -14,7 +14,7 @@ Due to the usage of CIPs, the driving of the motor is done independently form so
 The source code for initialization of peripherals used in the microcontroller is generated using the MPLAB Code Configurator (MCC).
 
 ## Resources
-- Application Note Link [(linkTBD)](http://www.microchip.com/)
+- Application Note Link [(AN3380-Driving a Metronome Using a PIC Microcontroller)](http://ww1.microchip.com/downloads/en/Appnotes/Driving-a-Metronome-Using-a-PIC-MCU-DS00003380B.pdf)
 - MPLAB® X IDE 5.30 or newer [(microchip.com/mplab/mplab-x-ide)](http://www.microchip.com/mplab/mplab-x-ide)
 - MPLAB® XC8 2.10 or newer compiler [(microchip.com/mplab/compilers)](http://www.microchip.com/mplab/compilers)
 - MPLAB® Code Configurator (MCC) 3.95.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
