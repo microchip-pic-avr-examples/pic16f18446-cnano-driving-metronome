@@ -39,14 +39,16 @@
         "author": "Microchip",
         "subcategories": [
             [
-               "Peripherals", "CCL"
+               "Peripherals",
+			   "CCL"
             ]
         ],
         "peripherals": [
             "CCL"
         ],
         "keywords": [
-            "Stepper motor"
+            "Stepper motor",
+			"Metronome"
         ],
 		"additionalData": {
 			"longDescription": {

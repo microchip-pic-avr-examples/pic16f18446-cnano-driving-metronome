@@ -1,34 +1,32 @@
-<div id="readme" class="Box-body readme blob js-code-block-container">
-<article class="markdown-body entry-content p-3 p-md-6" itemprop="text"><p><a href="https://www.microchip.com" rel="nofollow"><img src="Images/MicrochipLogo.png" alt="MCHP" style="max-width:100%;"></a></p>
+[![MCHP](images/microchip.png)](https://www.microchip.com)
 
 # Driving a Metronome Using a PIC Microcontroller
 
-## Introduction
-
 This repository contains the source code for a metronome application. It was developed using the PIC16F18446 microcontroller, along with a Switec Stepper motor, a potentiometer, a LED and a buzzer.
-
 The implementation of the application consists of a circuit composed of Core Independent Peripherals (CIPs), which is capable to create the signals that drive the Switec Stepper motor as a metronome. It also adjust the number of beats per minute of the metronome by reading an input value, provided by the user.
-
 Due to the usage of CIPs, the driving of the motor is done independently form software, so the computation complexity and program memory space used are substantially reduced.
-
 The source code for initialization of peripherals used in the microcontroller is generated using the MPLAB Code Configurator (MCC).
 
-## Resources
-- Application Note Link [(AN3380-Driving a Metronome Using a PIC Microcontroller)](http://ww1.microchip.com/downloads/en/Appnotes/Driving-a-Metronome-Using-a-PIC-MCU-DS00003380B.pdf)
+## Related Documentation
+- [AN3380-Driving a Metronome Using a PIC Microcontroller](https://www.microchip.com/wwwappnotes/appnotes.aspx?appnote=en1001742)
+- [PIC16F18446 datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/40001985B.pdf) for more information or specifications.
+
+## Software Used
 - MPLAB® X IDE 5.30 or newer [(microchip.com/mplab/mplab-x-ide)](http://www.microchip.com/mplab/mplab-x-ide)
 - MPLAB® XC8 2.10 or newer compiler [(microchip.com/mplab/compilers)](http://www.microchip.com/mplab/compilers)
 - MPLAB® Code Configurator (MCC) 3.95.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
 - PIC16 Library v1.77.0
-- [PIC16F18446 datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/40001985B.pdf) for more information or specifications.
 
-## Hardware components
+
+## Hardware Used
 - PIC16F18446 Curiosity Nano [(DM164144)](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM164144)
 - Switec Stepper motor
 - Potentiometer
 - LED
 - Buzzer
 
-## MCC Configuration
+## Setup
+### MCC Configuration
 This section shows the settings of the peripherals used in this example. These settings were done using Microchip Code Configurator (MCC).
 The following CIPs were used for this implementation:
 - Analog-to-Digital Converter with Computation (ADCC)
@@ -136,7 +134,7 @@ The metronome produces an audible and visual signal every time an oscillating pe
 
 ## Demo
 
-<img src="Images/Demo.gif" alt="Demo"/>
+<img src="Images/Demo.gif" width="600">
 
 Note:
 - Due to the physical limitations of the Switec Stepper used, the number of beats per minute of the metronome is between 40 and 250.
