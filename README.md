@@ -134,7 +134,7 @@ The metronome produces an audible and visual signal every time an oscillating pe
 
 ## Demo
 
-<img src="Images/Demo.gif" width="600">
+<img src="images/Demo.gif" width="600">
 
 Note:
 - Due to the physical limitations of the Switec Stepper used, the number of beats per minute of the metronome is between 40 and 250.
