@@ -39,12 +39,12 @@ The following CIPs were used for this implementation:
 #### System Module settings
 The MCU uses the high frequency internal oscillator (HFINTOSC), and the clock is set to 32 MHz.
 
-![System Module Settings](Images/Clock_config.PNG)
+![System Module Settings](images/Clock_config.PNG)
 
 #### ADCC settings
 ADCC is used to read the value from the analog potentiometer. It is configured to operate in average mode, with FOSC/ADCLK as clock source and FOSC/32 clock frequency.
 
-![ADCC Mode](Images/ADCC.PNG)
+![ADCC Mode](images/ADCC.PNG)
 
 
 The ADCC takes a series of 32 samples and provides the average value as output.
